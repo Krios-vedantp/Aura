@@ -1,0 +1,19 @@
+{
+  "name": "kai-aura-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KAI Aura — Deployment-Ready Decoupled Monorepo (frontend & backend)",
+  "scripts": {
+    "dev": "npm run dev:backend",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:worker": "npm --prefix backend run worker",
+    "worker": "npm --prefix backend run worker",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "test": "npm --prefix backend test",
+    "lint": "npm --prefix frontend run lint"
+  }
+}
